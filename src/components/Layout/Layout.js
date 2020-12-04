@@ -18,4 +18,4 @@ const Layout = ({ user, children }) => {
   );
 };
 
-export default Layou
+export default Layout
