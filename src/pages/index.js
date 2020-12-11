@@ -7,7 +7,7 @@ import Education from './Education';
 
 const Pages = ({ user }) => {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <Switch>
         <Route exact path="/my-portfolio">
           <Me user={user} />
