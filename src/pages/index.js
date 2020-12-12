@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 import Me from './Me';
 import Projects from './Projects';
 import Work from './Work';
@@ -7,22 +7,22 @@ import Education from './Education';
 
 const Pages = ({ user }) => {
   return (
-    <Router>
+    <HashRouter>
       <Switch>
-        <Route exact path="tonynology.github.io/my-portfolio/">
+        <Route exact path="/">
           <Me user={user} />
         </Route>
-        <Route path="tonynology.github.io/my-portfolio/projects">
+        <Route path="/projects">
           <Projects user={user} />
         </Route>
-        <Route path="tonynology.github.io/my-portfolio/work">
+        <Route path="/work">
           <Work user={user} />
         </Route>
-        <Route path="tonynology.github.io/my-portfolio/education">
+        <Route path="/education">
           <Education user={user} />
         </Route>
       </Switch>
-    </Router>
+    </HashRouter>
   );
 };
 
