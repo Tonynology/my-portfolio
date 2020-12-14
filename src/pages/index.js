@@ -7,7 +7,7 @@ import Education from './Education';
 
 const Pages = ({ user }) => {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter>
       <Switch>
         <Route exact path="/">
           <Me user={user} />
