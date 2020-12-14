@@ -9,16 +9,16 @@ const Pages = ({ user }) => {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
-        <Route exact path="/">
+        <Route exact path="my-portfolio/">
           <Me user={user} />
         </Route>
-        <Route path="/projects">
+        <Route path="my-portfolio/projects">
           <Projects user={user} />
         </Route>
-        <Route path="/work">
+        <Route path="my-portfolio/work">
           <Work user={user} />
         </Route>
-        <Route path="/education">
+        <Route path="my-portfolio/education">
           <Education user={user} />
         </Route>
       </Switch>

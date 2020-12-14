@@ -8,7 +8,6 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.title = "TaeHoon Moon Portfolio",
   document.getElementById('root')
 );
 
