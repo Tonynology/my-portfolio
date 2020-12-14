@@ -7,18 +7,18 @@ import Education from './Education';
 
 const Pages = ({ user }) => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
-        <Route exact path="/my-portfolio/">
+        <Route exact path="/">
           <Me user={user} />
         </Route>
-        <Route path="/my-portfolio/projects">
+        <Route path="/projects">
           <Projects user={user} />
         </Route>
-        <Route path="/my-portfolio/work">
+        <Route path="/work">
           <Work user={user} />
         </Route>
-        <Route path="/my-portfolio/education">
+        <Route path="/education">
           <Education user={user} />
         </Route>
       </Switch>
